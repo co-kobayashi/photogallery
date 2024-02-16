@@ -1,0 +1,285 @@
+@charset "utf-8";
+header {
+  text-align: center;
+}
+ul {
+  padding-left: 0;
+  display: flex;
+  width: 100%;
+  margin-bottom: 0;
+}
+ul li {
+  width: 16%;
+  list-style: none;
+  font-size: .8rem;
+}
+ul li a {
+  text-decoration: none;
+  color: #262626;
+  font-weight: 900;
+  padding-top: 2px;
+  padding-bottom: 2px;
+}
+header p {
+  margin-left: 71%;
+  margin-top: .5rem;
+}
+header p a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+header p a:hover {
+  text-decoration: none;
+  background-color:#262626;
+  background-position: left right;
+  transition: .5s;
+  padding: .5rem 1rem;
+  color:whitesmoke;
+  font-weight: bold;
+}
+/* navのデザイン */
+header nav ul li a::before {
+    transform: scaleX(0);
+    transform-origin: bottom right;
+}
+
+header nav ul li a:hover::before {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+li.choose a::before {
+  content: " ";
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  inset: 0 0 0 0;
+  background: white;
+  z-index: -1;
+  opacity: .8;
+  transition: transform .3s ease;
+}
+li.toppage a::before {
+  content: " ";
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  inset: 0 0 0 0;
+  background: rgb(32, 32, 32);
+  z-index: -1;
+  opacity: .8;
+  transition: transform .3s ease;
+}
+li.red-line a::before {
+  content: " ";
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  inset: 0 0 0 0;
+  background: rgb(229, 0, 0);
+  z-index: -1;
+  opacity: .8;
+  transition: transform .3s ease;
+}
+li.blue-line a::before {
+  content: " ";
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  inset: 0 0 0 0;
+  background: rgb(57, 122, 234);
+  z-index: -1;
+  opacity: .8;
+  transition: transform .3s ease;
+}
+li.yellow-line a::before {
+  content: " ";
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  inset: 0 0 0 0;
+  background: yellow;
+  z-index: -1;
+  opacity: .8;
+  transition: transform .3s ease;
+}
+li.green-line a::before {
+  content: " ";
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  inset: 0 0 0 0;
+  background: rgb(13, 159, 13);
+  z-index: -1;
+  opacity: .8;
+  transition: transform .3s ease;
+}
+li.pink-line a::before {
+  content: " ";
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  inset: 0 0 0 0;
+  background: lightcoral;
+  z-index: -1;
+  opacity: .8;
+  transition: transform .3s ease;
+}
+li.orange-line a::before {
+  content: " ";
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  inset: 0 0 0 0;
+  background: orange;
+  z-index: -1;
+  opacity: .8;
+  transition: transform .3s ease;
+}
+
+/* textのデザイン */
+.text {
+  position: absolute;
+  max-width: 85%;
+  height: 40%;
+  left: 56%;
+  margin-left: -55%;
+  top: 28%;
+  font-weight: 600;
+  font-size: 3.4rem;
+}
+
+p {
+  display: inline-block;
+  vertical-align: top;
+  margin: 0;
+}
+
+.word {
+  position: absolute;
+  width: 100%;
+  opacity: 0;
+}
+
+.letter {
+  display: inline-block;
+  position: relative;
+  transform: translateZ(25px);
+  transform-origin: 50% 50% 25px;
+}
+
+.letter.out {
+  transform: rotateX(90deg);
+  transition: transform 0.32s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+}
+
+.letter.behind {
+  transform: rotateX(-90deg);
+}
+
+.letter.in {
+  transform: rotateX(0deg);
+  transition: transform 0.38s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.wisteria {
+  color: #8e44ad;
+}
+
+.belize {
+  color: #2980b9;
+}
+
+.pomegranate {
+  color: #d01e0b;
+}
+
+.green {
+  color: #16a085;
+}
+footer {
+  position: absolute;
+  bottom: 0;
+  left: 46%;
+}
+ul#gallery {
+  overflow: hidden;
+}
+ul#gallery li {
+  float: left;
+  width: 30%;
+  margin: 1rem auto;
+}
+ul#gallery li img {
+  width: 100%;
+}
+@media screen and (min-width:435px) {
+    .text {
+        font-size:4rem;
+      }
+}
+@media screen and (min-width:555px) {
+  .text {
+      font-size:4.5rem;
+    }
+}
+@media screen and (min-width:720px) {
+    .text {
+        font-size:5rem;
+      }
+}
+@media screen and (min-width:868px) {
+    .text {
+        top: 25%;
+        font-size: 5.8rem;
+      }
+}
+@media screen and (min-width:940px) {
+    .text {
+      max-width: 95%;
+      font-size:6.5rem;
+      }
+}
+@media screen and (min-width:1000px) {
+  .text {
+    max-width: 83%;
+    font-size: 6.2rem;
+    }
+}
+@media screen and (min-width:1110px) {
+  .text {
+    max-width: 80%;
+    font-size: 6.5rem;
+    }
+}
+@media screen and (min-width:1235px) {
+  .text {
+    font-size: 6.2rem;
+    max-width: 65%;
+    }
+}
+
